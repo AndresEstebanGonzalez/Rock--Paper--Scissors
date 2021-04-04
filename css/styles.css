@@ -1,11 +1,17 @@
 body {
   background-color: #ccc;
 }
+
 /*First Sector*/
 .selections {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .selection {
   margin: 3rem 2rem 3rem 2rem;
   font-size: 5rem;
@@ -13,32 +19,46 @@ body {
   background: none;
   outline: none;
   cursor: pointer;
+  -webkit-transition: 550ms;
   transition: 550ms;
 }
+
 .selection:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
+
 .results {
   font-size: 2rem;
   margin-top: 2rem;
+  display: -ms-grid;
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .result-score {
   margin-left: 0.1rem;
   font-size: 1rem;
   color: #333;
 }
+
 .result-selection {
   margin-top: 1rem;
   opacity: 0.5;
   font-size: 3rem;
 }
+
 .result-selection.winner {
   margin-top: 1rem;
   opacity: 1;
   font-size: 5rem;
 }
+/*# sourceMappingURL=styles.css.map */
